@@ -9,11 +9,12 @@
 omodload 'spectrum'
 
 setopt CORRECT # Correct commands.
+alias dircolors=gdircolors
 
 # The 'ls' Family
 if is-callable 'dircolors'; then
   # GNU core utilities.
-  alias ls='ls --group-directories-first'
+  alias ls='gls --group-directories-first'
 
   if zstyle -t ':omz:alias:ls' color; then
     if [[ -f "$HOME/.dir_colors" ]]; then
@@ -35,7 +36,7 @@ else
   fi
 fi
 
-alias l='ls -1A'         # List in one column.
+alias l='ls'         # List in one column.
 alias ll='ls -lh'        # List human readable sizes.
 alias lr='ll -R'         # List recursively.
 alias la='ll -A'         # List hidden files.
