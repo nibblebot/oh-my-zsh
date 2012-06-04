@@ -1,21 +1,21 @@
-screen
-======
+GNU Screen
+==========
 
 Defines [GNU Screen][1] aliases and provides for auto launching it at start-up.
 
 Aliases
 -------
 
- - `sl` list sessions/socket directory.
- - `sn` start a new session.
- - `sr` attach to a session if one exists or start a new one.
+  - `sl` lists sessions/socket directory.
+  - `sn` starts a new session.
+  - `sr` attaches to a session if one exists or start a new one.
 
 Settings
 --------
 
 ### Auto-start
 
-Start a Screen session automatically when Zsh is launched.
+Starts a GNU Screen session automatically when Zsh is launched.
 
 To enable this feature, add the following line to *zshrc*:
 
@@ -24,9 +24,10 @@ To enable this feature, add the following line to *zshrc*:
 Authors
 -------
 
-*The authors of this module should be contacted via the GitHub issue tracker.*
+*The authors of this module should be contacted via the [issue tracker][2].*
 
- - [Sorin Ionescu](/sorin-ionescu)
+  - [Sorin Ionescu](https://github.com/sorin-ionescu)
 
 [1]: http://www.gnu.org/software/screen/
+[2]: https://github.com/sorin-ionescu/oh-my-zsh/issues
 
